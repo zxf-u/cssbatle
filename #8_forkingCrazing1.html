@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      #box {
+        padding: 42px 122px 0;
+        width: 400px;
+        height: 300px;
+        margin: 50px auto;
+        background: #6592cf;
+      }
+      #box .bg {
+        display: flex;
+      }
+      .left-margin {
+        margin-left: 20px;
+      }
+      .upward-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50% 50% 0 0;
+        background: #060f55;
+      }
+      #striped {
+        width: 140px;
+        height: 70px;
+        background: repeating-linear-gradient(
+          to right,
+          #060f55 0,
+          #060f55 20px,
+          #6592cf 20px,
+          #6592cf 40px
+        );
+      }
+      .downward-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 0 0 50% 50%;
+        background: #6592cf;
+      }
+      .darker {
+        width: 140px;
+        background: #060f55;
+      }
+      #bottom {
+        width: 140px;
+        height: 90px;
+        border-radius: 0 0 100px 100px;
+        background: #060f55;
+      }
+      #stick {
+        width: 20px;
+        height: 60px;
+        background: #060f55;
+        margin-left: 60px;
+        position: relative;
+        top: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="bg">
+        <div class="upward-circle"></div>
+        <div class="upward-circle left-margin"></div>
+        <div class="upward-circle left-margin"></div>
+        <div class="upward-circle left-margin"></div>
+      </div>
+      <div id="striped"></div>
+      <div class="bg darker">
+        <div class="downward-circle left-margin"></div>
+        <div class="downward-circle left-margin"></div>
+        <div class="downward-circle left-margin"></div>
+      </div>
+      <div id="bottom"></div>
+      <div id="stick"></div>
+    </div>
+  </body>
+</html>
